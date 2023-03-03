@@ -1,0 +1,130 @@
+body{
+	background-image: url(images.jpg);
+	background-size: cover;
+	font-family: arial;
+}
+
+.main {
+	position: absolute;
+	top: 30rem;
+	left: 20rem;
+}
+
+.name {
+	font-size: 50px;
+	color: white;
+}
+
+.about {
+	font-size: 35px;
+	color: grey;
+}
+
+.social-media {
+	position: absolute;
+	left: 3px;
+}
+
+.social-media img{
+	border-radius: 100%;
+	width: 25px;
+	height: 25px;
+	margin-left: 23px;
+	margin-top: 85px;
+	transition: 0.9s;
+}
+
+.sidebar {
+	width: 15rem;
+	height: 41rem;
+	background-color: #333333;
+}
+
+.sidebar ul{
+	position: absolute;
+	top: 17rem;
+}
+
+.sidebar li {
+	margin: 0px 0px 50px 40px;
+}
+
+.sidebar li a{
+	text-decoration: none;
+	font-weight: 600;
+	color: #7A7A7A;
+	transition: 1s;
+
+}
+
+.sidebar a:hover {
+	color: white;
+}
+
+.profile p {
+	color: white;
+	font-size: 20px;
+	position: relative;
+	top: 70px;
+}
+
+/*.pp{
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	background-color: white;
+	margin-left: 70px;
+	position: relative;
+	top: 50px;
+	transition: 1s;
+}*/
+
+.pp img {
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	background-color: white;
+	margin-left: 70px;
+	border: solid black 5px;
+	position: relative;
+	top: 50px;
+
+}
+
+.whatsapp:hover {
+	border-radius: 100%;
+	background-color: #25D366;
+}
+
+.instagram:hover {
+	border-radius: 100%;
+	background:linear-gradient(to right, violet, red) ;
+}
+
+.linkedin:hover {
+	border-radius: 100%;
+	background-color: #0E76A8;
+}
+
+.facebook:hover {
+	border-radius: 100%;
+	background-color: #3B5998;
+}
+
+.about a{
+	transition: 1s;
+	text-decoration: none;
+	color: grey;
+}
+
+.about a:hover {
+	margin-left: -50px;
+	background-color: #D9D9D9;
+	color: black;
+}
+
+
+
+
+
+
