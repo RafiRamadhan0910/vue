@@ -119,7 +119,19 @@ body{
 	color: black;
 }
 
-@media screen and (max-width: 500px) {
+button {
+	display: none;
+	opacity: 0%;
+}
+
+@media screen and (max-width: 580px) {
+	button {
+		position: absolute;
+		left: 150px;
+		top: 10px;
+
+	}
+
 	.sidebar {
 		width: 100%;
 		height: 3rem;
@@ -145,10 +157,14 @@ body{
 	}
 
 	.social-media, ul, .username {
+		display: none;
 		opacity: 0%;
 	}
-	body {
-		background-size: auto;
+}
+
+@media screen and (max-width:  450px) {
+	.main {
+		font-size: 20px;
 	}
 }
 
