@@ -141,7 +141,9 @@ button {
 		position: absolute;
 		left: 200px;
 		top: 10px;
-
+		color: white;
+		background-color: transparent;
+		border: transparent;
 	}
 
 	.sidebar {
