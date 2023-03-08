@@ -15,7 +15,7 @@
 	<div class="sidebar" id="sidebar">
 		<div class="profile">
 			<div class="pp" id ="pp">
-				<img src="pp.png">
+				<img src="pp.png" id="photo">
 			</div>
 			<div class="sidebar2" id="sidebar2"> 			
 				<button id="btn">X</button>
@@ -44,9 +44,16 @@
 		const ul = document.getElementById("ul")
 		const btn = document.getElementById("btn");
 		const sd = document.getElementById("sidebar2");
+		const pp = document.getElementById("photo");
 		i.addEventListener('click', function() {
 			if (screen.width <= 580) {
 				sd.style.opacity = "100%";
+
+				pp.style.width = "90px";
+				pp.style.height = "90px";
+				pp.style.position = "absolute";
+				pp.style.left = "5px";
+				pp.style.top = "100px";
 				un.style.display = "inline";
 				sm.style.display = "inline";
 				ul.style.display = "inline";
@@ -60,6 +67,12 @@
 		});
 		btn.addEventListener('click', function() {
 			sd.style.opacity = "0%";
+
+			pp.style.width = "30px";
+			pp.style.height = "30px";
+			pp.style.position = "absolute";
+			pp.style.left = "-50px";
+			pp.style.top = "7px";
 			un.style.display = "none";
 			sm.style.display = "none";
 			ul.style.display = "none";
