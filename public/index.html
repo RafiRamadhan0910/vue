@@ -17,14 +17,13 @@
 			<div class="pp" id ="pp">
 				<img src="pp.png">
 			</div>
-			<button id="btn">X</button>
-			<center>
-				<p class= "username" id="username">Rafi Ramadhan</p>
-			</center>
+			<div class="sidebar2" id="sidebar2"> 			
+				<button id="btn">X</button>
+			<p class= "username" id="username">Rafi Ramadhan</p>
 			<div class="social-media" id="social-media">
 				<a href="https://wa.me/6281383900336" target="blank" ><img src="whatsapp.png" class="whatsapp"></a>
 				<a href="" target="blank" ><img src="facebook.png" class="facebook"></a>
-				<a href="" target="blank" ><img src="/instagram.png" class="instagram"></a>
+				<a href="" target="blank" ><img src="instagram.png" class="instagram"></a>
 				<a href="https://www.linkedin.com/in/rafi-ramadhan-a1b749225/" target="blank" ><img src="linkedin.png" class="linkedin"></a>
 			</div>
 		</div>
@@ -34,6 +33,8 @@
                 <li><a href="#">Contact</a></li>    
                 <li><a href="#">Portfolio</a></li>    
             </ul>
+
+        </div>
 	</div>
 	<script> 
 		const i = document.getElementById("pp");
@@ -42,19 +43,23 @@
 		const sm = document.getElementById("social-media");
 		const ul = document.getElementById("ul")
 		const btn = document.getElementById("btn");
+		const sd = document.getElementById("sidebar2");
 		i.addEventListener('click', function() {
-			un.style.display = "inline";
-			sm.style.display = "inline";
-			ul.style.display = "inline";
-			un.style.opacity = "100%";
-			sm.style.opacity = "100%";
-			ul.style.opacity = "100%";
 			if (screen.width <= 580) {
+				sd.style.opacity = "100%";
+				un.style.display = "inline";
+				sm.style.display = "inline";
+				ul.style.display = "inline";
+				un.style.opacity = "100%";
+				sm.style.opacity = "100%";
+				ul.style.opacity = "100%";
 				btn.style.opacity = "100%";
 				btn.style.display = "inline";
+
 			}
 		});
 		btn.addEventListener('click', function() {
+			sd.style.opacity = "0%";
 			un.style.display = "none";
 			sm.style.display = "none";
 			ul.style.display = "none";
