@@ -9,30 +9,61 @@
 </head>
 <body>
 	<div class="main">
-		<p class="name">Rafi Ramadhan</p>
+		<p class="name" id="2">Rafi Ramadhan</p>
 		<p class="about"><a href="">Let's know more about me</a></p>
 	</div>
-	<div class="sidebar">
+	<div class="sidebar" id="sidebar">
 		<div class="profile">
-			<div class="pp">
+			<div class="pp" id ="pp">
 				<img src="pp.png">
 			</div>
+			<button id="btn">X</button>
 			<center>
-				<p class= "username">Rafi Ramadhan</p>
+				<p class= "username" id="username">Rafi Ramadhan</p>
 			</center>
-			<div class="social-media">
+			<div class="social-media" id="social-media">
 				<a href="https://wa.me/6281383900336" target="blank" ><img src="whatsapp.png" class="whatsapp"></a>
 				<a href="" target="blank" ><img src="facebook.png" class="facebook"></a>
-				<a href="" target="blank" ><img src="instagram.png" class="instagram"></a>
+				<a href="" target="blank" ><img src="/instagram.png" class="instagram"></a>
 				<a href="https://www.linkedin.com/in/rafi-ramadhan-a1b749225/" target="blank" ><img src="linkedin.png" class="linkedin"></a>
 			</div>
 		</div>
-		    <ul>
+		    <ul id="ul">
                 <li><a href="#">Home</a></li>    
                 <li><a href="#">About</a></li>   
                 <li><a href="#">Contact</a></li>    
                 <li><a href="#">Portfolio</a></li>    
             </ul>
 	</div>
+	<script> 
+		const i = document.getElementById("pp");
+		const j = document.getElementById("sidebar");
+		const un = document.getElementById("username");
+		const sm = document.getElementById("social-media");
+		const ul = document.getElementById("ul")
+		const btn = document.getElementById("btn");
+		i.addEventListener('click', function() {
+			un.style.display = "inline";
+			sm.style.display = "inline";
+			ul.style.display = "inline";
+			un.style.opacity = "100%";
+			sm.style.opacity = "100%";
+			ul.style.opacity = "100%";
+			if (screen.width <= 580) {
+				btn.style.opacity = "100%";
+				btn.style.display = "inline";
+			}
+		});
+		btn.addEventListener('click', function() {
+			un.style.display = "none";
+			sm.style.display = "none";
+			ul.style.display = "none";
+			btn.style.display = "none";
+			un.style.opacity = "0%";
+			sm.style.opacity = "0%";
+			ul.style.opacity = "0%";
+			btn.style.opacity = "0%";
+		});
+	</script>
 </body>
 </html>
