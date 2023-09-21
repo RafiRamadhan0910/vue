@@ -1,7 +1,7 @@
 body{
 	display: inline-block;
 	background-image: url(images.jpg);
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	font-family: arial;
 }
