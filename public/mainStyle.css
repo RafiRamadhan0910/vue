@@ -126,7 +126,7 @@ button {
 	left: 50px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 912px) {
 	.username {
 		position: absolute;
 		top: 300px;
