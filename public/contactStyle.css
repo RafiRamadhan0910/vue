@@ -101,7 +101,7 @@ h1 {
 	top: 7rem;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 912px) {
 	.contact-box {
 		width: 18rem;
 		height: ;
