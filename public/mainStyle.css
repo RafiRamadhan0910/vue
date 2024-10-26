@@ -84,7 +84,7 @@ body{
 }*/
 
 .pp {
-	overflow: hidden;
+	
 }
 
 .pp img {
@@ -97,6 +97,7 @@ body{
 	position: relative;
 	top: 50px;
 	z-index: 100;
+	overflow: hidden;
 
 }
 
