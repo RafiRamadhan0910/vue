@@ -83,6 +83,10 @@ body{
 	transition: 1s;
 }*/
 
+.pp {
+	overflow: hidden;
+}
+
 .pp img {
 	width: 90px;
 	height: 90px;
